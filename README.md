@@ -110,8 +110,8 @@ wifi-auth-bypass-simulation/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/wifi-auth-bypass-simulation.git
-cd wifi-auth-bypass-simulation
+git clone https://github.com/Jarukit-PM/Wifi-Authentication-Attack.git
+cd Wifi-Authentication-Attack
 ```
 
 ### 2. Make the Script Executable
@@ -143,5 +143,5 @@ chmod +x wifi_attack.sh
 
 ---
 
-💻 Created by a 3rd-Year Computer Engineering Student  
+💻 Created by a Computer Engineering Student  
 Mini Project – Cybersecurity: **Wi-Fi Authentication Bypass Simulation**
