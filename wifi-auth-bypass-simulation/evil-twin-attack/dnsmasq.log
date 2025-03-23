@@ -1,0 +1,9 @@
+dnsmasq: started, version 2.91test9 cachesize 150
+dnsmasq: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+dnsmasq-dhcp: DHCP, IP range 192.168.1.10 -- 192.168.1.50, lease time 12h
+dnsmasq: reading /etc/resolv.conf
+dnsmasq: using nameserver 192.168.15.2#53
+dnsmasq: read /etc/hosts - 7 names
+dnsmasq-dhcp: DHCPREQUEST(wlan0) 192.168.1.34 a6:78:6d:85:91:67 
+dnsmasq-dhcp: DHCPACK(wlan0) 192.168.1.34 a6:78:6d:85:91:67 
+dnsmasq: exiting on receipt of SIGTERM
