@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successfully Connected</title> 
+  <style> 
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+    } 
+ 
+    body { 
+      background-color: #fafafa; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      color: #333;
+    } 
+ 
+    .container { 
+      background: #fff; 
+      padding: 40px; 
+      border-radius: 16px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+      width: 100%; 
+      max-width: 360px; 
+      text-align: center; 
+    } 
+ 
+    .success-icon {
+      width: 70px;
+      height: 70px;
+      background-color: #f0f9f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      color: #4CAF50;
+    }
+    
+    .success-icon svg {
+      width: 36px;
+      height: 36px;
+    }
+    
+    h2 { 
+      margin-bottom: 16px; 
+      color: #333; 
+      font-weight: 500; 
+      font-size: 22px;
+    } 
+    
+    p {
+      color: #666;
+      margin-bottom: 24px;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    
+    .redirect-button { 
+      padding: 14px; 
+      width: 100%; 
+      background: #2e2e2e; 
+      color: #fff; 
+      border: none; 
+      border-radius: 12px; 
+      font-size: 15px; 
+      font-weight: 500;
+      cursor: pointer; 
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-sizing: border-box;
+    } 
+ 
+    .redirect-button:hover { 
+      background: #000; 
+      transform: translateY(-1px);
+    } 
+    
+    .redirect-button:active {
+      transform: translateY(1px);
+    }
+    
+    .footer { 
+      margin-top: 24px;
+      font-size: 13px; 
+      color: #999; 
+    } 
+    
+    .countdown {
+      font-weight: 500;
+      color: #555;
+    }
+  </style> 
+</head> 
+<body> 
+  <div class="container"> 
+    <div class="success-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+    </div>
+    <h2>Successfully Connected</h2> 
+    <p>Thank you for connecting to our Wi-Fi network. You now have access to the internet.</p>
+    <a href="http://www.google.com" class="redirect-button">Continue to Internet</a>
+    <div class="footer">Redirecting automatically in <span class="countdown">5</span> seconds</div> 
+  </div>
+  
+  <script>
+    // Countdown and auto-redirect
+    let seconds = 5;
+    const countdownEl = document.querySelector('.countdown');
+    
+    const interval = setInterval(() => {
+      seconds--;
+      countdownEl.textContent = seconds;
+      
+      if (seconds <= 0) {
+        clearInterval(interval);
+        window.location.href = 'http://www.google.com';
+      }
+    }, 1000);
+  </script>
+</body> 
+</html>
