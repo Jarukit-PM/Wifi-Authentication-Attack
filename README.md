@@ -143,5 +143,17 @@ chmod +x wifi_attack.sh
 
 ---
 
+## 🪪 License
+
+This tool is released under the [MIT License](./LICENSE).
+
+---
+
 💻 Created by a Computer Engineering Student  
 Mini Project – Cybersecurity: **Wi-Fi Authentication Bypass Simulation**
+
+---
+
+**IMPORTANT:** This tool comes with no guarantees or warranties.  
+The author will not be responsible for any consequences resulting from the use or misuse of this tool.  
+Use it responsibly and at your own risk.
