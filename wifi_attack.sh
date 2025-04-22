@@ -148,7 +148,7 @@ crack_password() {
         echo "[+] Cracking using custom wordlist ($WORDLIST)..."
         hashcat -m 22000 $FILE -a 0 $WORDLIST --force -w 3 --status
 
-    elif [ "$METHOD" == "3" ]; then
+    elif [ "$METHOD" = "3" ]; then
         echo "[+] Available .22000 files:"
         ls *.22000 2>/dev/null || echo "[-] No .22000 files found."
         
@@ -158,7 +158,7 @@ crack_password() {
         echo "[+] Using rule-based attack with best64.rule..."
         hashcat -m 22000 $FILE -a 0 $DICT -r /usr/share/hashcat/rules/best64.rule --force -w 3 --status
 
-    elif [ "$METHOD" == "4" ]; then
+    elif [ "$METHOD" = "4" ]; then
         echo "[+] Available .22000 files:"
         ls *.22000 2>/dev/null || echo "[-] No .22000 files found."
         
